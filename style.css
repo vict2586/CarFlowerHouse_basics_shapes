@@ -1,0 +1,101 @@
+/* Grass */
+.grass {
+  stroke: greenyellow;
+  stroke-width: 5;
+}
+
+/* House */
+.house-base {
+  stroke: gray;
+  fill: darkgray;
+  stroke-width: 5;
+}
+
+.roof {
+  stroke: black;
+  stroke-width: 5;
+}
+
+.window1 {
+  fill: black;
+}
+
+.window2 {
+  fill: black;
+}
+
+.door {
+  fill: black;
+}
+
+/* Flower */
+.flower-stem {
+  stroke: greenyellow;
+  stroke-width: 5;
+}
+
+.flower-middle {
+  fill: yellow;
+}
+
+.leaf {
+  fill: pink;
+  stroke: lightpink;
+  stroke-width: 5;
+}
+
+/* Car */
+.car-base {
+  stroke: black;
+  fill: gray;
+  stroke-width: 5;
+}
+
+.wheel {
+  fill: lightgrey;
+}
+
+.car-glass {
+  stroke: gainsboro;
+  stroke-width: 5;
+}
+
+/* Car animation */
+
+.car_kf {
+  animation-name: car_kf;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  transition-timing-function: ease-out;
+  transform-origin: center;
+}
+
+@keyframes car_kf {
+  from {
+    transform: translateX(60vw);
+  }
+
+  to {
+    transform: translateX(-25vw);
+  }
+}
+
+/* Window animation */
+
+.window_kf {
+  animation-name: window_kf;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  transition-timing-function: ease-out;
+  transform-origin: center;
+}
+
+@keyframes window_kf {
+  from {
+    fill: black;
+  }
+
+  to {
+    fill: yellow;
+  }
+}

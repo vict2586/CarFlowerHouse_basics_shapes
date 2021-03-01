@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CarFlowerHouse</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <svg width="1355" height="300">
+
+        <line class="grass" x1="0" x2="1355" y1="200" y2="200"/>
+
+
+        <!-- House -->
+        <rect class="house-base" x="10" y="100" width="150" height="100" />
+
+        <polygon class="roof" points="10 100, 85 40, 160 100" />
+        <!-- Start x,y - middle x,y - end x,y -->
+
+        <rect class="window1" x="75" y="130" width="30" height="30" />
+        <rect class="window2" x="30" y="130" width="30" height="30" />
+
+        <rect class="door" x="120" y="130" width="30" height="70" />
+        
+
+        <!-- Flower -->
+        <line class="flower-stem" x1="200" x2="200" y1="150" y2="200" />
+        
+        <circle class="leaf" cx="190" cy="140" r="6"/>
+        <circle class="leaf" cx="200" cy="130" r="6"/>
+        <circle class="leaf" cx="210" cy="140" r="6"/>
+        <circle class="leaf" cx="195" cy="154" r="6"/>
+        <circle class="leaf" cx="205" cy="154" r="6"/>
+
+        <circle class="flower-middle" cx="200" cy="144" r="8"/>
+
+
+        <!-- Car -->
+        <g class="car_kf">
+        <line class="car-glass" x1="610" x2="650" y1="120" y2="90"/>
+
+        <rect class="car-base" x="600" y="120" width="150" height="50" />
+
+        <circle class="wheel" cx="630" cy="180" r="20"/>
+        <circle class="wheel" cx="720" cy="180" r="20"/>
+        </g>
+
+    </svg>
+
+    <p>Turn on the ligths in the house</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
